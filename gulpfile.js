@@ -15,8 +15,10 @@ gulp.task('images', function() {
             optipng({optimizationLevel: 5}),
             svgo({
                 plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
+                    {
+                        name: 'removeViewBox',
+                        active: true
+                    }
                 ]
             })
         ], {
