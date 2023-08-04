@@ -17,7 +17,7 @@ gulp.task('images', function() {
                 plugins: [
                     {
                         name: 'removeViewBox',
-                        active: true
+                        active: false
                     }
                 ]
             })
